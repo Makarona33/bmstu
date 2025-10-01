@@ -2,23 +2,23 @@
 #include <math.h>
 #include <stdlib.h>
 
-int solve(int arr[], int a, int n, int i) {
-    if (i == n) return a * arr[i];
-    return a * arr[i] + solve(arr, a, n, i + 1) * 2;
-}
-
 int main(void) {
-    int a, b, m;
-    scanf("%d %d %d", &a, &b, &m);
-    int size = log2(b) + 1;
-    int *bin_b = malloc(size * sizeof(int));
-    for (int i = 0; i < size; i++) {
-        bin_b[i] = b % 2;
-        b /= 2;
+    int n, x0;
+    scanf("%d %d", &n, &x0);
+    
+    int *koefs = malloc(n * sizeof(int));
+    for (int i = 0; i < n; i++) {
+         scanf("%d", &koefs[i]);
     }
-
-    printf("%d\n", solve(bin_b, a, size - 1, 0) % m);
-
-    free(bin_b);
+    
+    int p = koefs[0];
+    int dp = 0;
+    for (int i = 1; i < n; i++) {
+        dp = dp*x0 + p;
+        p = p*x0 + koefs[i];
+    }
+    
+    printf("%d\n%d", p, dp);
+    
     return 0;
 }
