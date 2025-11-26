@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <assert.h>
 #include <stdint.h>
 
 #define abs(x) (((x) > 0) ? (x) : -(x))
@@ -23,9 +22,6 @@ void insertion_sort(int64_t *base, size_t length) {
 
 
 void merge(int64_t *base, size_t l, size_t midpoint, size_t r) {
-    assert(l < midpoint);
-    assert(midpoint <= r);
-
     int64_t *placeholder_array = malloc(sizeof (int64_t) * (r - l + 1));
 
     size_t l_side_index = l;
@@ -54,8 +50,6 @@ void merge(int64_t *base, size_t l, size_t midpoint, size_t r) {
 
 
 void merge_sort(int64_t *base, size_t l, size_t r) {
-    assert(l <= r);
-
     size_t subarray_length = r - l + 1;
     if (subarray_length < 5) {
         insertion_sort(base + l, subarray_length);
