@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define SIZE 5
-int arr[SIZE] = {5, 4, 3, 2, 1};
+#define n 5
+int arr[n] = {5, 4, 3, 2, 1};
 
 void bubblesort(unsigned long nel,
                 int (*compare)(unsigned long i, unsigned long j),
@@ -48,9 +48,9 @@ void swap(unsigned long i, unsigned long j) {
 
 
 int main() {
-    bubblesort(SIZE, cmp, swap);
+    bubblesort(n, cmp, swap);
 
-    for (int i = 0; i < SIZE; ++i) {
+    for (int i = 0; i < n; ++i) {
         printf("%d ", arr[i]);
     }
 
