@@ -1,7 +1,7 @@
 #include <stdio.h>
 
-#define SIZE 10
-int arr[SIZE] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
+#define n 10
+int arr[n] = {9, 8, 7, 6, 5, 4, 3, 2, 1, 0};
 
 int cmp(unsigned long i, unsigned long j) {
     if (arr[i] > arr[j]) {
@@ -49,8 +49,8 @@ void shellsort(unsigned long nel,
 
 
 int main() {
-    shellsort(SIZE, cmp, swap);
-    for (int i = 0; i < SIZE; ++i) {
+    shellsort(n, cmp, swap);
+    for (int i = 0; i < n; ++i) {
         printf("%d ", arr[i]);
     }
     return 0;
