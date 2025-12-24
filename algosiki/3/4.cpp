@@ -26,7 +26,7 @@ public:
         return topIndex >= MAX_SIZE - 1;
     }
     
-    void push(Inf x) {
+    void add(Inf x) {
         if (isFull()) return;
         data[++topIndex] = x;
     }
@@ -46,9 +46,9 @@ int main() {
     StackArray s;
     s.create();
     
-    s.push(10);
-    s.push(20);
-    s.push(30);
+    s.add(10);
+    s.add(20);
+    s.add(30);
     
     cout << "Текущий элемент: " << s.top() << endl;
     
