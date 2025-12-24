@@ -11,7 +11,7 @@ private:
     
 public:
     StackArray() {
-        topIndex = -1;
+        create();
     }
     
     void create() {
@@ -22,40 +22,40 @@ public:
         return topIndex == -1;
     }
     
-    bool isFull() {
-        return topIndex >= MAX_SIZE - 1;
-    }
-    
     void add(Inf x) {
         if (isFull()) return;
         data[++topIndex] = x;
     }
     
-    Inf pop() {
+    Inf get() {
         if (isEmpty()) return -1;
         return data[topIndex--];
     }
     
-    Inf top() {
+    Inf readHead() {
         if (isEmpty()) return -1;
         return data[topIndex];
+    }
+    
+private:
+    bool isFull() {
+        return topIndex >= MAX_SIZE - 1;
     }
 };
 
 int main() {
     StackArray s;
-    s.create();
     
     s.add(10);
     s.add(20);
     s.add(30);
     
-    cout << "Текущий элемент: " << s.top() << endl;
+    cout << "readHead: " << s.readHead() << endl;
     
-    cout << "Удаление: " << s.pop() << endl;
-    cout << "Удаление: " << s.pop() << endl;
+    cout << "get: " << s.get() << endl;
+    cout << "get: " << s.get() << endl;
     
-    cout << "Пустой?: " << (s.isEmpty() ? "да" : "нет") << endl;
+    cout << "isEmpty?: " << (s.isEmpty() ? "да" : "нет") << endl;
     
     return 0;
 }
