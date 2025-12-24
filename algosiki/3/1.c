@@ -84,7 +84,6 @@ int main() {
     Add(20, "ббб");
     Add(40, "ггг");
     
-    
     Print();
     
     printf("\nПорядковый номер ключей: 20 - %d, 99 - %d\n", FindByKey(20), FindByKey(99));
@@ -93,8 +92,10 @@ int main() {
     Delete(20);
     Print();
     
-    printf("\nДобавление 30\n");
+    printf("\nДобавление 30 (уже есть)\n");
     Add(30, "F");
-
+    
+    Print();
+    
     return 0;
 }
