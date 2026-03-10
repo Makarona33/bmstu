@@ -37,9 +37,6 @@ int main() {
     for (unsigned int d : divisors) if (d != x) find_edges(x, d);
         
     int n = divisors.size();
-    for (int i = 0; i < n; ++i) cout << divisors[i] << " ";
-    cout << "\n";
-    
     for (int i = 0; i < n; ++i) {
         for (int j = 0; j < n; ++j) {
             if (edges.count({divisors[i], divisors[j]}) || edges.count({divisors[j], divisors[i]}))
