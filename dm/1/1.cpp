@@ -32,7 +32,7 @@ int main() {
         }
     }
     
-    std::sort(divisors.begin(), divisors.end(), greater<int>());  
+    sort(divisors.begin(), divisors.end(), greater<int>());  
     
     for (unsigned int d : divisors) if (d != x) find_edges(x, d);
         
