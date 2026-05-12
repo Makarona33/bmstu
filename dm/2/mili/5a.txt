@@ -1,0 +1,76 @@
+A00 A01 A02 A03 A04 A10 A11 A12 A13 A14 A20 A21 A22 A23 A24 A30 A31 A32 A33 A40 A41 A42
+alpha digit
+A00
+A00 alphaA10
+A00 digitA01
+A01 alphaA11
+A01 digitA02
+A02 alphaA12
+A02 digitA03
+A03 alphaA13
+A03 digitA04
+A04 alphaA14
+A10 alphaA20
+A10 digitA11
+A11 alphaA21
+A11 digitA12
+A12 alphaA22
+A12 digitA13
+A13 alphaA23
+A13 digitA14
+A14 alphaA24
+A20 alphaA30
+A20 digitA21
+A21 alphaA31
+A21 digitA22
+A22 alphaA32
+A22 digitA23
+A23 alphaA33
+A23 digitA24
+A30 alphaA40
+A30 digitA31
+A31 alphaA41
+A31 digitA32
+A32 alphaA42
+A32 digitA33
+A40 digitA41
+A41 digitA42
+
+alpha digit
+q00 q01 q02 q03 q04 q10 q11 q12 q13 q14 q20 q21 q22 q23 q24 q30 q31 q32 q33 q40 q41 q42
+q01 q02 q03 q04 q10 q11 q12 q13 q14 q20 q21 q22 q23 q24 q30 q31 q32 q33 q40 q41 q42
+q00
+q00 alpha q10
+q00 digit q01
+q01 alpha q11
+q01 digit q02
+q02 alpha q12
+q02 digit q03
+q03 alpha q13
+q03 digit q04
+q04 alpha q14
+q10 alpha q20
+q10 digit q11
+q11 alpha q21
+q11 digit q12
+q12 alpha q22
+q12 digit q13
+q13 alpha q23
+q13 digit q14
+q14 alpha q24
+q20 alpha q30
+q20 digit q21
+q21 alpha q31
+q21 digit q22
+q22 alpha q32
+q22 digit q23
+q23 alpha q33
+q23 digit q24
+q30 alpha q40
+q30 digit q31
+q31 alpha q41
+q31 digit q32
+q32 alpha q42
+q32 digit q33
+q40 digit q41
+q41 digit q42
